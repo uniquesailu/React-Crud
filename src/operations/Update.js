@@ -13,7 +13,7 @@ export const Update = () => {
   const handleUpdate=async(e)=>{
     e.preventDefault();
     try{
-      await axios.put(`http://localhost:5000/api/v1/employee/${id}`,
+      await axios.put(`https://crud-bend-express-cajk.onrender.com/api/v1/employee/${id}`,
       {ename,email,emobile})
       history("/")
     }catch(error){
